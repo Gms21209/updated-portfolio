@@ -1,0 +1,519 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f3f3f3;
+}
+
+.container {
+  background-color: #f3f3f3;
+  margin: 0 auto;
+  width: 90%;
+}
+
+header {
+  font-family: 'Space Mono', monospace;
+  font-size: 16px;
+  font-style: italic;
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 100%;
+}
+
+.logo-visible {
+  float: left;
+  width: 6rem;
+}
+
+.logo-hidden {
+  display: none;
+}
+
+.logos:active .logo-visible {
+  display: none
+}
+
+/* for desktop, change to ".logos: hover"*/
+.logos:active .logo-hidden {
+  display: inline-block;
+  float: left;
+  width: 6rem;
+}
+
+.tabs {
+  float: right;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 15px;
+}
+
+header li {
+  display: inline-block;
+  margin-left: 50px;
+}
+
+.work {
+  display: none;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  color: #000;
+}
+
+a:hover {
+  color: #555;
+}
+
+h1 {
+  font-family: 'Space Mono', monospace;
+  font-size: 2.1rem;
+  font-weight: 400;
+  line-height: 1.7em;
+  padding-top: 160px;
+}
+
+.hero-italic {
+  font-style: italic;
+}
+
+.boxlink {
+  border-style: solid;
+  border-width: .1rem;
+  padding: 0 4px;
+  text-decoration: none;
+}
+
+.boxlink:active, .boxlink:hover {
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+
+.carousel {
+  border-bottom: .1rem solid #000;
+}
+
+.case-studies {
+  margin-top: 10rem;
+}
+
+/*.canopy-background {
+  background-color: #DFDFDF;
+  margin-bottom: 10rem;
+}
+
+.canopy-home {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  width: 70%;*/
+}
+
+.project-background {
+  display: block;
+}
+
+.canopy-home {
+  width: 100%;
+  margin: 1rem 0 10rem 0;
+}
+
+.canopy-home {
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.canopy-home:hover {
+  opacity: .5;
+}
+
+h2 {
+  font-family: 'Space Mono', monospace;
+  font-size: 2.2rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+h3 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: 1rem;
+}
+
+.capstone-background {
+  background-color: #DFDFDF;
+  margin-bottom: 7.5rem;
+}
+
+.contacts li {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding-bottom: .75rem;
+}
+
+.contacts {
+  margin-bottom: 2rem;
+}
+
+.contacts a:link {
+  color: #000;
+}
+
+.contacts a:hover {
+  color: #555;
+}
+
+/*start of "about" styling*/
+
+.about-image {
+  display: block;
+  margin-top: 10rem;
+  width: 100%;
+}
+
+.about-me h1 {
+  font-size: 2.4rem;
+  padding: 3rem 0 1rem 0;
+}
+
+.about-me p {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.5;
+  padding-bottom: 2rem;
+}
+
+.free-time {
+  margin-bottom: 2.5rem;
+}
+
+/*start of "canopy" styling*/
+
+.case-study {
+  line-height: 1.5;
+}
+
+.canopy-hero h1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  padding: 10rem 0 1rem 0;
+  text-align: center;
+}
+
+.canopy-hero h2 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6rem;
+  margin: 0 5rem 2rem 5rem;
+  text-align: center;
+}
+
+.canopy-home-green {
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.colored {
+  background-color: #DFDFDF;
+  font-family: 'roc-grotesk', sans-serif;
+  margin: 5rem 0 5rem 0;
+}
+
+.center {
+  padding: 4rem 0 1rem 0;
+  text-align: center;
+}
+
+.colored h2 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 2em;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+.small-fourth > .med-text, .large-fourth > .right {
+  padding-bottom: 3em;
+}
+
+.colored li {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+#mobile-icon {
+  display: block;
+  margin: 0 auto;
+  padding: 4rem 0 2rem 0;
+}
+
+.view-prototypes h3 {
+  color: #52796B;
+  font-size: 1.6em;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.desktop {
+  display: none;
+}
+
+.section-label {
+  color: #6B6B6B;
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6em;
+  padding-bottom: 1.5em;
+}
+
+.subsection {
+  margin-bottom: 5rem;
+}
+
+.subsection h1 {
+  font-size: 2.2em;
+  font-weight: 700;
+  padding: 0 0 .75em 0;
+}
+
+.subsection p {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6em;
+}
+
+.subsection ul {
+  padding: 1em;
+}
+
+.subsection li {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6em;
+  list-style: inside;
+  padding-top: .75em;
+}
+
+.final-mockups {
+  display: block;
+  padding-top: 3em;
+  width: 100%;
+}
+
+.findings, .stories, .google-drive {
+  padding: 6% 6% 12% 6%;
+}
+
+.third {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.key-findings .third {
+  margin-top: 2rem;
+  width: 49%;
+}
+
+.colored h3 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 0 3rem 0;
+  text-align: center;
+}
+
+.colored h4 {
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-bottom: 1rem;
+}
+
+.colored p {
+  font-size: 1.4rem;
+  width: 90%;
+  padding-bottom: 1rem;
+}
+
+.persona-pic {
+  width: 100%;
+}
+
+.persona h2 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-top: 4rem;
+}
+
+.persona p {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+
+.demographic {
+  font-style: italic;
+}
+
+.indent {
+  padding-left: 1rem;
+  width: 90%;
+}
+
+.persona h3 {
+  font-weight: 600;
+  padding-bottom: 1rem;
+}
+
+.persona ul {
+  margin-left: 1rem;
+  padding:0 0 3rem 0;
+}
+
+.persona li {
+  font-size: 1.4rem;
+}
+
+.personas {
+  margin-bottom: 2rem;
+}
+
+.sophia {
+  padding-top: 4rem;
+}
+
+.first-paragraph {
+  padding-bottom: 2rem;
+}
+
+.colored.google-drive {
+  margin-top: 2.5rem;
+  padding: 6%;
+}
+
+.SWOT h2 {
+  padding-bottom: 0;
+}
+
+.SWOT ul {
+  padding-top: .25rem;
+}
+
+.SWOT li {
+  font-size: 1.4rem;
+}
+
+.colored h3 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 2rem;
+  font-weight: 500;
+  padding: 1rem 0 3rem 0;
+  text-align: center;
+}
+
+.high-priority {
+  margin-left: 4rem;
+}
+
+.stories h5 {
+  font-size: 1.8rem;
+}
+
+h6 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding: 1rem 0 3rem 0;
+}
+
+.upload.chart {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 4.9rem;
+  width: 25%;
+}
+
+.log-in.chart {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+}
+
+
+.slideshow-container{
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image-container {
+  display: block;
+  overflow: hidden;
+}
+
+.image-container .image{
+  width: 100%;
+}
+
+.arrow {
+   width:1.6rem;
+   height: 1.6rem;
+   color: #fff;
+   position: absolute;
+   top: 50%;
+   margin-top: -2rem;
+   cursor: pointer;
+}
+
+.prev {
+   border-bottom: .3rem solid;
+   border-left: .3rem solid;
+   transform: rotate(45deg);
+   left: 2rem;
+}
+
+.next {
+   border-bottom: .3rem solid;
+   border-left: .3rem solid;
+   transform: rotate(-135deg);
+   right: 2rem;
+ }
+
+.dot-container {
+  text-align: center;
+}
+
+.dot {
+  position: inherit;
+  top: -4rem;
+  height: .8rem;
+  width: 3.6rem;
+  background-color: #bbb;
+  border-radius: 0rem;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+  transition: all .5s;
+}
+
+.active , .dot:hover {
+  background-color: #555;
+}
+
+.fade {
+  transition: all .5s;
+}
+
+.arrow:hover {
+  transition: all .2s;
+}
