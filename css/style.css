@@ -557,3 +557,30 @@ video {
   padding: 10%;
   width: 100%;
 }
+
+.dot2 {
+  position: inherit;
+  top: -4rem;
+  height: .8rem;
+  width: 3.6rem;
+
+  background-color: #bbb;
+  border-radius: 0rem;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+  transition: all .5s;
+}
+
+.active , .dot2:hover {
+  background-color: #555;
+}
+
+.image-container2 {
+  display: block;
+  overflow: hidden;
+}
+
+.image-container2 .image{
+  width: 100%;
+}

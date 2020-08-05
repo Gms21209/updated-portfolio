@@ -73,3 +73,37 @@ function newSlide(n){
 function currentSlide(n){
   Carousel(slideNo = n);
 }
+
+
+
+
+
+
+var slideNo = 1;
+Carousel2(slideNo);
+
+function Carousel2(n){
+  var slides2 = document.getElementsByClassName("image-container2");
+  var dots2 = document.getElementsByClassName("dot2");
+  if (n > slides2.length) {
+    slideNo = 1;
+  }
+  if (n < 1) {
+    slideNo = slides2.length;
+  }
+  for (var i = 0; i < slides2.length; i++) {
+    slides2[i].style.display = "none";
+  }
+  slides2[slideNo - 1].style.display = "block";
+  for (var i = 0; i < dots2.length; i++) {
+    dots2[i].className = dots2[i].className.replace(" active", "");
+  }
+  dots2[slideNo - 1].className += " active";
+
+}
+function newSlide2(n){
+  Carousel2(slideNo += n);
+}
+function currentSlide2(n){
+  Carousel2(slideNo = n);
+}
