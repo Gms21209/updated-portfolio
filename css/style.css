@@ -122,23 +122,38 @@ h1 {
   width: 70%;*/
 }
 
-.project-background {
-  display: block;
-}
-
-.canopy-home {
+.project-conatiner {
+  background-color: #000;
+  position: relative;
   width: 100%;
-  margin: 1rem 0 10rem 0;
 }
 
-.canopy-home {
+.project-image {
+  backface-visibility: hidden;
+  display: block;
+  margin: 1rem 0 10rem 0;
+  opacity: 1;
+  -webkit-transition: .3s ease-in-out;
+  transition: .5 ease-in-out;
+  width: 100%;
+}
+
+.project-container:hover .project-image {
+  opacity: 0.3;
+}
+
+.project-container:hover {
+  opacity: 1;
+}
+
+/*.canopy-home {
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;
 }
 
 .canopy-home:hover {
   opacity: .5;
-}
+}*/
 
 h2 {
   font-family: 'Space Mono', monospace;
@@ -154,10 +169,6 @@ h3 {
   padding-bottom: 1rem;
 }
 
-.capstone-background {
-  background-color: #DFDFDF;
-  margin-bottom: 7.5rem;
-}
 
 .contacts li {
   font-family: 'roc-grotesk', sans-serif;
@@ -517,4 +528,11 @@ h6 {
 
 .arrow:hover {
   transition: all .2s;
+}
+
+
+video {
+  padding: 10%;
+  background-color: #52796B;
+  width: 100%;
 }
