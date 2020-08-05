@@ -134,16 +134,35 @@ h1 {
   margin: 1rem 0 10rem 0;
   opacity: 1;
   -webkit-transition: .3s ease-in-out;
-  transition: .5 ease-in-out;
+  transition: .3 ease-in-out;
   width: 100%;
 }
 
-.project-container:hover .project-image {
-  opacity: 0.3;
+.middle {
+  display: inline-block;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3 ease-in-out;
+  opacity: 0;
+  position: absolute;
+  top: 67.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-.project-container:hover {
+.project-container:hover .project-image {
+  opacity: 0.15;
+}
+
+.project-container:hover .middle {
   opacity: 1;
+}
+
+.hover-text {
+  color: #000;
+  font-family: 'Space Mono', monospace;
+  font-size: 2.2rem;
 }
 
 /*.canopy-home {
