@@ -521,6 +521,7 @@ h6 {
  }
 
 .dot-container {
+  margin-bottom: 4rem;
   text-align: center;
 }
 
@@ -529,6 +530,7 @@ h6 {
   top: -4rem;
   height: .8rem;
   width: 3.6rem;
+
   background-color: #bbb;
   border-radius: 0rem;
   display: inline-block;
@@ -551,7 +553,7 @@ h6 {
 
 
 video {
-  padding: 10%;
   background-color: #52796B;
+  padding: 10%;
   width: 100%;
 }
