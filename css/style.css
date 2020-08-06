@@ -119,8 +119,8 @@ h1 {
   margin-right: auto;
   padding-top: 3rem;
   padding-bottom: 3rem;
-  width: 70%;*/
-}
+  width: 70%;
+}*/
 
 .project-container {
   background-color: #000;
@@ -144,7 +144,7 @@ h1 {
   transition: .3 ease-in-out;
   opacity: 0;
   position: absolute;
-  top: 80%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -160,9 +160,9 @@ h1 {
 }
 
 .hover-text {
-  color: #000;
+  color: #fff;
   font-family: 'Space Mono', monospace;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 }
 
 /*.canopy-home {
@@ -480,6 +480,10 @@ h6 {
   width: 70%;
 }
 
+.less-space {
+  padding-bottom: 1rem;
+}
+
 
 .slideshow-container{
   position: relative;
@@ -583,4 +587,54 @@ video {
 
 .image-container2 .image{
   width: 100%;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.space {
+  padding-top: 2rem;
+}
+
+.typography {
+  padding-left: 2rem;
+}
+
+.preference-h2 {
+  font-family: 'roc-grotesk', sans-serif;
+  font-size: 2.2rem;
+  font-weight: bold;
+  padding-top: 4rem;
+}
+
+.dot3 {
+  position: inherit;
+  top: -4rem;
+  height: .8rem;
+  width: 3.6rem;
+
+  background-color: #bbb;
+  border-radius: 0rem;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+  transition: all .5s;
+}
+
+.active , .dot3:hover {
+  background-color: #555;
+}
+
+.image-container3 {
+  display: block;
+  overflow: hidden;
+}
+
+.image-container3 .image{
+  width: 100%;
+}
+
+.three {
+  top: 39%;
 }

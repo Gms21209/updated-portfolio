@@ -107,3 +107,34 @@ function newSlide2(n){
 function currentSlide2(n){
   Carousel2(slideNo2 = n);
 }
+
+
+
+var slideNo3 = 1;
+Carousel3(slideNo3);
+
+function Carousel3(n){
+  var slides3 = document.getElementsByClassName("image-container3");
+  var dots3 = document.getElementsByClassName("dot3");
+  if (n > slides3.length) {
+    slideNo3 = 1;
+  }
+  if (n < 1) {
+    slideNo3 = slides3.length;
+  }
+  for (var i = 0; i < slides3.length; i++) {
+    slides3[i].style.display = "none";
+  }
+  slides3[slideNo3 - 1].style.display = "block";
+  for (var i = 0; i < dots3.length; i++) {
+    dots3[i].className = dots3[i].className.replace(" active", "");
+  }
+  dots3[slideNo3 - 1].className += " active";
+
+}
+function newSlide3(n){
+  Carousel3(slideNo3 += n);
+}
+function currentSlide3(n){
+  Carousel3(slideNo3 = n);
+}
