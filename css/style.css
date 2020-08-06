@@ -510,6 +510,10 @@ h6 {
    cursor: pointer;
 }
 
+.arrow:visited {
+  color: #fff;
+}
+
 .prev {
    border-bottom: .3rem solid;
    border-left: .3rem solid;
@@ -637,4 +641,8 @@ video {
 
 .three {
   top: 39%;
+}
+
+.less-margin {
+  margin-bottom: 2rem;
 }
