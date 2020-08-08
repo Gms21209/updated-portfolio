@@ -563,15 +563,6 @@
     transition: all .2s;
   }
 
-
-
-  .video-wrapper {
-    position: relative;
-    width: 100%;
-    padding-bottom: 56.25%;
-    height: 0;
-  }
-
   iframe {
     background-color: #52796B;
     padding: 7.5%;
@@ -656,4 +647,13 @@
 
   .less-margin {
     margin-bottom: 2rem;
+  }
+
+  #lessons {
+    font-weight: 600;
+    padding: 2rem 0 0 0;
+  }
+
+  .centered {
+    text-align: center;
   }
