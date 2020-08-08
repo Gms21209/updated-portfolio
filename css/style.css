@@ -564,13 +564,6 @@
   }
 
 
-  /* Background styling for videos if added via root folder
-
-  video {
-    background-color: #52796B;
-    padding: 10%;
-    width: 100%;
-  } */
 
   .video-wrapper {
     position: relative;
@@ -579,12 +572,9 @@
     height: 0;
   }
 
-  .video-wrapper iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
+  iframe {
+    background-color: #52796B;
+    padding: 7.5%;
   }
 
   .dot2 {
