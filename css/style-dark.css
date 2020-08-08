@@ -1,4 +1,4 @@
-* {
+/* * {
   box-sizing: border-box;
 }
 
@@ -39,7 +39,7 @@ header {
 }
 
 /* for desktop, change to ".logos: hover"*/
-.logos:active .logo-hidden {
+/*.logos:active .logo-hidden {
   display: inline-block;
   width: 6rem;
   float: left;
