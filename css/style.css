@@ -122,6 +122,9 @@
   .carousel h3:before{
     content: 'architecture';
     -webkit-animation: animate 10s linear infinite;
+    -moz-animation:    animate 10s linear infinite;
+    -o-animation:      animate 10s linear infinite;
+    animation:         animate 10s linear infinite;
   }
 
   @-webkit-keyframes animate {
@@ -142,8 +145,62 @@
     }
   }
 
+  @keyframes animate{
+   0%, 100%{
+     content: 'architecture';
+   }
+   20%{
+     content: 'illustration';
+   }
+   40%{
+     content: 'x';
+   }
+   60%{
+     content: 'y';
+   }
+   80%{
+     content: 'z';
+   }
+ }
+
+ @-moz-keyframes animate{
+   0%, 100%{
+     content: 'architecture';
+   }
+   20%{
+     content: 'illustration';
+   }
+   40%{
+     content: 'x';
+   }
+   60%{
+     content: 'y';
+   }
+   80%{
+     content: 'z';
+   }
+ }
+
+ @-o-keyframes animate {
+   0%, 100%{
+     content: 'architecture';
+   }
+   20%{
+     content: 'illustration';
+   }
+   40%{
+     content: 'x';
+   }
+   60%{
+     content: 'y';
+   }
+   80%{
+     content: 'z';
+   }
+ }
+
   #case-studies {
-    margin-top: 10rem;
+    margin-top: 7rem;
   }
 
   /*.canopy-background {
@@ -217,7 +274,7 @@
     font-size: 2.2rem;
     font-weight: 400;
     padding-bottom: 1rem;
-    padding-top: 1rem;
+    padding-top: 3rem;
   }
 
   h3 {
@@ -709,4 +766,18 @@
 
   .centered {
     text-align: center;
+  }
+
+
+
+
+  /* Media queries */
+  @media only screen and (min-width: 575px) {
+    html {
+      font-size: 12px;
+    }
+
+    .container {
+      width: 80%;
+    }
   }
