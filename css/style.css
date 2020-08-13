@@ -117,7 +117,7 @@
 
   .carousel h3:before{
     content: 'architecture';
-    animation: animate 10s linear infinite;
+    -webkit-animation: animate 10s linear infinite;
   }
 
   @-webkit-keyframes animate {
