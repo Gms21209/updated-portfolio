@@ -121,23 +121,20 @@
   }
 
   @keyframes animate {
-    0%{
-      content: 'architecture';
+    0%, 100%{
+      content: 'cludiya';
     }
     20%{
-      content: 'illustration';
+      content: 'cludiyas face';
     }
     40%{
-      content: 'well-groomed lawns';
+      content: 'cludiyas laugh';
     }
     60%{
-      content: 'da boyz';
+      content: 'cludiyas high fives';
     }
     80%{
-      content: 'my dawgs';
-    }
-    100%{
-      content: 'da spurs';
+      content: 'o yea cludiya again';
     }
   }
 
