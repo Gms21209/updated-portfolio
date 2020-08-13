@@ -122,19 +122,19 @@
 
   @keyframes animate {
     0%, 100%{
-      content: 'cludiya';
+      content: 'architecture';
     }
     20%{
-      content: 'cludiyas face';
+      content: 'illustration';
     }
     40%{
-      content: 'cludiyas laugh';
+      content: 'x';
     }
     60%{
-      content: 'cludiyas high fives';
+      content: 'y';
     }
     80%{
-      content: 'o yea cludiya again';
+      content: 'z';
     }
   }
 
