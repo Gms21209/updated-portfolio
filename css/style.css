@@ -104,6 +104,10 @@
     color: #fff;
   }
 
+  .carousel {
+    display: inline-block;
+  }
+
   .carousel h3 {
     font-family: 'Space Mono', monospace;
     font-size: 2.1rem;
@@ -112,28 +116,28 @@
   }
 
   .carousel h3:before{
-    content: 'architecture.';
+    content: 'architecture';
     animation: animate 10s linear infinite;
   }
 
   @keyframes animate {
     0%{
-      content: 'architecture.';
+      content: 'architecture';
     }
     20%{
-      content: 'illustration.';
+      content: 'illustration';
     }
     40%{
-      content: 'x.';
+      content: 'well-groomed lawns';
     }
     60%{
-      content: 'y.';
+      content: 'da boyz';
     }
     80%{
-      content: 'z.';
+      content: 'my dawgs';
     }
     100%{
-      content: 'a.';
+      content: 'da spurs';
     }
   }
 
