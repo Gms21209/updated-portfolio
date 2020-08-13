@@ -120,7 +120,7 @@
     animation: animate 10s linear infinite;
   }
 
-  @keyframes animate {
+  @-webkit-keyframes animate {
     0%, 100%{
       content: 'architecture';
     }
