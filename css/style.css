@@ -104,33 +104,36 @@
     color: #fff;
   }
 
-  .carousel {
-    border-bottom: .1rem solid #000;
+  .carousel h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.7em;
   }
 
-  .carousel:before{
-    content: 'architecture';
-    animation: animate 8s linear infinite;
+  .carousel h3:before{
+    content: 'architecture.';
+    animation: animate 10s linear infinite;
   }
 
-  @@keyframes animate {
+  @keyframes animate {
     0%{
-      content: 'architecture';
+      content: 'architecture.';
     }
     20%{
-      content: 'illustration';
+      content: 'illustration.';
     }
     40%{
-      content: 'x';
+      content: 'x.';
     }
     60%{
-      content: 'y';
+      content: 'y.';
     }
     80%{
-      content: 'z';
+      content: 'z.';
     }
     100%{
-      content: 'a';
+      content: 'a.';
     }
   }
 
