@@ -20,10 +20,10 @@
 
   header {
     font-family: 'Space Mono', monospace;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-style: italic;
     margin: 0 auto;
-    padding-top: 20px;
+    padding-top: 2rem;
     width: 100%;
   }
 
@@ -52,12 +52,12 @@
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-top: 15px;
+    padding-top: 1.5rem;
   }
 
   header li {
     display: inline-block;
-    margin-left: 50px;
+    margin-left: 5rem;
   }
 
   .work {
@@ -74,7 +74,26 @@
   }
 
   a:hover {
-    color: #555;
+    color: #9C9C9C;
+  }
+
+  .contacts li {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: .75rem;
+  }
+
+  .contacts {
+    margin-bottom: 2rem;
+  }
+
+  .contacts a:link {
+    color: #000;
+  }
+
+  .contacts a:hover {
+    color: #9C9C9C;
   }
 
 
@@ -88,7 +107,7 @@
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 1.7em;
-    padding-top: 160px;
+    padding-top: 16rem;
   }
 
   .hero-italic {
@@ -98,8 +117,9 @@
   .boxlink {
     border-style: solid;
     border-width: .1rem;
-    padding: 0 4px;
+    padding: 0 .4rem;
     text-decoration: none;
+    transition: 0.3s;
   }
 
   .boxlink:active, .boxlink:hover {
@@ -135,32 +155,32 @@
       content: 'illustration';
     }
     40%{
-      content: 'x';
+      content: 'interaction design';
     }
     60%{
-      content: 'y';
+      content: 'generative art';
     }
     80%{
-      content: 'z';
+      content: 'well-manicured lawns';
     }
   }
 
   @keyframes animate{
-   0%, 100%{
-     content: 'architecture';
-   }
-   20%{
-     content: 'illustration';
-   }
-   40%{
-     content: 'x';
-   }
-   60%{
-     content: 'y';
-   }
-   80%{
-     content: 'z';
-   }
+    0%, 100%{
+      content: 'architecture';
+    }
+    20%{
+      content: 'illustration';
+    }
+    40%{
+      content: 'interaction design';
+    }
+    60%{
+      content: 'generative art';
+    }
+    80%{
+      content: 'well-manicured lawns';
+    }
  }
 
  @-moz-keyframes animate{
@@ -171,13 +191,13 @@
      content: 'illustration';
    }
    40%{
-     content: 'x';
+     content: 'interaction design';
    }
    60%{
-     content: 'y';
+     content: 'generative art';
    }
    80%{
-     content: 'z';
+     content: 'well-manicured lawns';
    }
  }
 
@@ -189,13 +209,13 @@
      content: 'illustration';
    }
    40%{
-     content: 'x';
+     content: 'interaction design';
    }
    60%{
-     content: 'y';
+     content: 'generative art';
    }
    80%{
-     content: 'z';
+     content: 'well-manicured lawns';
    }
  }
 
@@ -284,24 +304,6 @@
     padding-bottom: 1rem;
   }
 
-  .contacts li {
-    font-family: 'roc-grotesk', sans-serif;
-    font-size: 1.6rem;
-    font-weight: 400;
-    padding-bottom: .75rem;
-  }
-
-  .contacts {
-    margin-bottom: 2rem;
-  }
-
-  .contacts a:link {
-    color: #000;
-  }
-
-  .contacts a:hover {
-    color: #555;
-  }
 
 
 
@@ -309,14 +311,27 @@
 
 /* "About" styling*/
 
-  .about-image {
+  .about-image-mobile {
     display: block;
     margin-top: 10rem;
     width: 100%;
   }
 
+  .about-image-desktop {
+    display: none;
+  }
+
   .about-me {
-    line-height: 1.5
+    line-height: 1.5;
+  }
+
+  .about-me h3 {
+    font-size: 1.2rem;
+    padding-top: .5rem;
+  }
+
+  .italic {
+    font-style: italic;
   }
 
   .about-me h1 {
@@ -329,8 +344,6 @@
     padding: 0rem 0 3rem 0;
   }
 
-  .about-me h3 {
-  }
 
   .about-me p {
     font-family: 'roc-grotesk', sans-serif;
@@ -773,11 +786,167 @@
 
   /* Media queries */
   @media only screen and (min-width: 575px) {
-    html {
-      font-size: 12px;
-    }
 
     .container {
       width: 80%;
     }
+  }
+
+
+
+
+
+
+
+  @media only screen and (min-width: 991px) {
+
+    /* All pages*/
+
+      .container {
+        width: 75%;
+      }
+
+      header {
+        font-family: 'Space Mono', monospace;
+        font-size: 1.8rem;
+        padding-top: 3rem;
+      }
+
+      header li {
+        display: inline-block;
+        margin-left: 10rem;
+      }
+
+      .logos:hover .logo-visible {
+        display: none
+      }
+
+      .logos:hover .logo-hidden {
+        display: inline-block;
+        float: left;
+        width: 6rem;
+      }
+
+      footer li {
+        display: inline-block;
+        margin: 0 auto;
+      }
+
+      .padding-left {
+        padding-left: 4rem;
+      }
+
+      footer img {
+        padding-right: .5rem;
+      }
+
+      .contacts {
+        margin: 15rem 0 5rem 0;
+        text-align: center;
+      }
+
+      .contacts li {
+        font-size: 2rem;
+      }
+
+
+
+
+    /* Index styling*/
+
+      h1 {
+        font-size: 3.2rem;
+        padding-top: 22rem;
+      }
+
+      .carousel h3 {
+        font-size: 3.2rem;
+      }
+
+      #case-studies {
+        margin-top: 20rem;
+      }
+
+      .hover-text {
+        font-size: 3.2rem;
+      }
+
+      h2 {
+        font-size: 2.8rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+
+
+
+    /* "About" styling*/
+
+      .about-image-mobile {
+        display: none;
+      }
+
+      .align-right {
+        display: inline-block;
+        float: right;
+        padding-top: 1rem;
+        width: 45%;
+      }
+
+      .about-me h3 {
+        font-size: 1.4rem;
+        padding-top: 1rem;
+        text-align: right;
+      }
+
+      .italic {
+        font-style: italic;
+      }
+
+      .about-image-desktop {
+        display: block;
+        width: 100%;
+      }
+
+      .about-me {
+        margin-top: 15rem;
+        width: 100%;
+      }
+
+      .about-text {
+        width: 48%
+      }
+
+      .about-me h1 {
+        font-size: 3.2em;
+        padding: 0 0 2rem 0;
+      }
+
+      .about-me h2 {
+        font-size: 2rem;
+        padding: 0rem 0 3rem 0;
+      }
+
+      .about-me p {
+        font-size: 1.8rem;
+      }
+
+      .free-time {
+        margin-bottom: 0;
+        padding-bottom: 0;
+      }
+
+      .about-text span {
+      font-weight: bold;
+      }
+
+      .smaller-margin {
+        margin-top: 10rem;
+      }
+
+
   }
