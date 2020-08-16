@@ -161,7 +161,7 @@
       content: 'generative art';
     }
     80%{
-      content: 'well-manicured lawns';
+      content: 'design thinking';
     }
   }
 
@@ -179,7 +179,7 @@
       content: 'generative art';
     }
     80%{
-      content: 'well-manicured lawns';
+      content: 'design thinking';
     }
  }
 
@@ -197,7 +197,7 @@
      content: 'generative art';
    }
    80%{
-     content: 'well-manicured lawns';
+     content: 'design thinking';
    }
  }
 
@@ -215,7 +215,7 @@
      content: 'generative art';
    }
    80%{
-     content: 'well-manicured lawns';
+     content: 'design thinking';
    }
  }
 
@@ -325,23 +325,18 @@
     line-height: 1.5;
   }
 
-  .about-me h3 {
-    font-size: 1.2rem;
-    padding-top: .5rem;
-  }
-
-  .italic {
-    font-style: italic;
-  }
-
   .about-me h1 {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     padding: 3rem 0 1rem 0;
   }
 
   .about-me h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     padding: 0rem 0 3rem 0;
+  }
+
+  .about-me h3 {
+    display: none;
   }
 
 
@@ -884,6 +879,7 @@
 
 
 
+
     /* "About" styling*/
 
       .about-image-mobile {
@@ -948,5 +944,101 @@
         margin-top: 10rem;
       }
 
+
+
+    /*start of "canopy" styling*/
+
+    .canopy-hero h1 {
+      font-size: 4.2rem;
+      font-weight: bold;
+      padding: 10rem 0 1rem 0;
+      text-align: center;
+    }
+
+    .canopy-hero h2 {
+      font-size: 2rem;
+      padding: 0 0 4rem 0;
+      width: 42%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .colored {
+      margin: 10rem 0 5rem 0;
+    }
+
+    .colored h2 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .center {
+      display: block;
+      padding-bottom: 4rem;
+    }
+
+    .small-fourth {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      width: 16%;
+    }
+
+    .large-fourth {
+      display: inline-block;
+      padding-left: 3rem;
+      width: 40%;
+    }
+
+    .align-left {
+      text-align: left;
+    }
+
+    .tools {
+      padding-left: 6rem;
+      width: 18%;
+    }
+
+    .colored li {
+      font-size: 1.5rem;
+    }
+
+    .med-text {
+      display: block;
+    }
+
+    .left {
+      float: left;
+    }
+
+    .right {
+      float: right;
+    }
+
+    .view-prototypes {
+      display: inline-block;
+      width: 75%;
+    }
+
+    .view-prototypes h3 {
+      font-size: 2em;
+      margin-bottom: 6rem;
+      text-align: center;
+    }
+
+    .mobile {
+      float: right;
+    }
+
+    .desktop {
+      display: block;
+      float: left;
+    }
+
+    .mobile-icon, .desktop-icon {
+      display: block;
+      margin: 0 auto;
+      padding: 12rem 0 2rem 0;
+    }
 
   }
