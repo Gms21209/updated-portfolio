@@ -138,3 +138,38 @@ function newSlide3(n){
 function currentSlide3(n){
   Carousel3(slideNo3 = n);
 }
+
+
+
+
+
+
+
+var slideNo4 = 1;
+Carousel4(slideNo4);
+
+function Carousel4(n){
+  var slides4 = document.getElementsByClassName("image-container4");
+  var dots4 = document.getElementsByClassName("dot4");
+  if (n > slides4.length) {
+    slideNo4 = 1;
+  }
+  if (n < 1) {
+    slideNo4 = slides4.length;
+  }
+  for (var i = 0; i < slides4.length; i++) {
+    slides4[i].style.display = "none";
+  }
+  slides4[slideNo4 - 1].style.display = "block";
+  for (var i = 0; i < dots4.length; i++) {
+    dots4[i].className = dots4[i].className.replace(" active", "");
+  }
+  dots4[slideNo4 - 1].className += " active";
+
+}
+function newSlide4(n){
+  Carousel4(slideNo4 += n);
+}
+function currentSlide4(n){
+  Carousel4(slideNo4 = n);
+}

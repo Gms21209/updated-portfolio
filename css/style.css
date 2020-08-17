@@ -294,7 +294,7 @@
     font-size: 2.2rem;
     font-weight: 400;
     padding-bottom: 1rem;
-    padding-top: 3rem;
+    padding-top: 0;
   }
 
   h3 {
@@ -594,17 +594,21 @@
     padding: 1rem 0 3rem 0;
   }
 
-  .upload.chart {
+  .upload.chart.vertical {
     display: block;
     margin: 0 auto;
     padding-bottom: 4.9rem;
     width: 25%;
   }
 
-  .log-in.chart {
+  .log-in.chart.vertical {
     display: block;
     margin: 0 auto;
     width: 70%;
+  }
+
+  .horizontal {
+    display: none;
   }
 
   .less-space {
@@ -664,7 +668,6 @@
     top: -4rem;
     height: .8rem;
     width: 3.6rem;
-
     background-color: #bbb;
     border-radius: 0rem;
     display: inline-block;
@@ -725,8 +728,16 @@
     padding-top: 2rem;
   }
 
+  .color-palette-desktop {
+    display: none;
+  }
+
   .typography {
     padding-left: 2rem;
+  }
+
+  .typography-desktop {
+    display: none;
   }
 
   .preference-h2 {
@@ -752,6 +763,10 @@
 
   .active , .dot3:hover {
     background-color: #555;
+  }
+
+  .desktop-slider {
+    display: none;
   }
 
   .image-container3 {
@@ -786,9 +801,111 @@
   /* Media queries */
   @media only screen and (min-width: 575px) {
 
+  /* All pages*/
     .container {
-      width: 80%;
+      width: 85%;
     }
+
+    header {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.8rem;
+      padding-top: 3rem;
+    }
+
+    header li {
+      display: inline-block;
+      margin-left: 8rem;
+    }
+
+    footer li {
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .padding-left {
+      padding-left: 4rem;
+    }
+
+    footer img {
+      padding-right: .5rem;
+    }
+
+    .contacts {
+      margin: 15rem 0 5rem 0;
+      text-align: center;
+    }
+
+    .contacts li {
+      font-size: 2rem;
+    }
+
+  /* Index styling*/
+
+    h1 {
+      font-size: 2.8rem;
+      padding-top: 16rem;
+    }
+
+    .carousel h3 {
+      font-size: 2.8rem;
+    }
+
+    #case-studies {
+      margin-top: 10rem;
+    }
+
+  /* "About" styling*/
+    .about-me h1 {
+      font-size: 4em;
+      padding: 4rem 0 2rem 0;
+    }
+
+    .about-me h2 {
+      font-size: 2.4rem;
+      padding: 0rem 0 3rem 0;
+    }
+
+
+
+
+
+
+
+    .mobile-slider {
+      display: none;
+    }
+
+    .desktop-slider {
+      display: block;
+    }
+
+    .dot4 {
+      position: inherit;
+      top: -4rem;
+      height: .8rem;
+      width: 3.6rem;
+
+      background-color: #bbb;
+      border-radius: 0rem;
+      display: inline-block;
+      cursor: pointer;
+      z-index: 1;
+      transition: all .5s;
+    }
+
+    .active , .dot4:hover {
+      background-color: #555;
+    }
+
+    .image-container4 {
+      display: block;
+      overflow: hidden;
+    }
+
+    .image-container4 .image{
+      width: 100%;
+    }
+
   }
 
 
@@ -805,14 +922,7 @@
         width: 75%;
       }
 
-      header {
-        font-family: 'Space Mono', monospace;
-        font-size: 1.8rem;
-        padding-top: 3rem;
-      }
-
       header li {
-        display: inline-block;
         margin-left: 10rem;
       }
 
@@ -826,27 +936,6 @@
         width: 6rem;
       }
 
-      footer li {
-        display: inline-block;
-        margin: 0 auto;
-      }
-
-      .padding-left {
-        padding-left: 4rem;
-      }
-
-      footer img {
-        padding-right: .5rem;
-      }
-
-      .contacts {
-        margin: 15rem 0 5rem 0;
-        text-align: center;
-      }
-
-      .contacts li {
-        font-size: 2rem;
-      }
 
 
 
@@ -863,7 +952,7 @@
       }
 
       #case-studies {
-        margin-top: 20rem;
+        margin-top: 30rem;
       }
 
       .hover-text {
@@ -898,6 +987,7 @@
       }
 
       .about-me h3 {
+        display: block;
         font-size: 1.4rem;
         padding-top: 1rem;
         text-align: right;
@@ -922,17 +1012,17 @@
       }
 
       .about-me h1 {
-        font-size: 3.2em;
+        font-size: 3.4em;
         padding: 0 0 2rem 0;
       }
 
       .about-me h2 {
-        font-size: 2rem;
+        font-size: 2.4rem;
         padding: 0rem 0 3rem 0;
       }
 
       .about-me p {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       .free-time {
@@ -1003,7 +1093,7 @@
       width: 18%;
     }
 
-    .colored li {
+    .specs li {
       font-size: 1.5rem;
     }
 
@@ -1032,6 +1122,10 @@
       text-align: center;
     }
 
+    .view-prototypes h3:hover {
+      color: #8DD3BA;
+    }
+
     .mobile {
       float: left;
       width: 50%;
@@ -1056,33 +1150,44 @@
 
     .final-mockups {
       margin-bottom: 12rem;
-      padding-top: 5rem;
+    }
+
+    .problems li, .solutions li, .google-drive li {
+      font-size: 2rem;
+    }
+
+    .subsection {
+      margin-bottom: 8rem;
     }
 
     .narrow {
       padding-left: 16rem;
-      width: 70%;
+      width: 80%;
+    }
+
+    .narrow {
+      padding-left: 16rem;
     }
 
     .subsection h1 {
       font-size: 2.8em;
-      padding: 0 0 1em 0;
+      padding-bottom: 3rem;
     }
 
     .subsection p {
       font-size: 2em;
     }
 
-    .subsection ul {
+    .persona ul {
       padding: 2em;
     }
 
-    .subsection li {
+    .persona li {
       font-size: 2rem;
     }
 
     .findings {
-      padding: 8% 16%;
+      padding: 8% 14%;
     }
 
     .key-findings .third {
@@ -1096,13 +1201,13 @@
     }
 
     .colored h4 {
-      font-size: 2.8rem;
+      font-size: 3.6rem;
       font-weight: bold;
       padding-bottom: 1.5rem;
     }
 
     .colored p {
-      font-size: 1.6rem;
+      font-size: 2rem;
       width: 85%;
       padding-bottom: 1rem;
     }
@@ -1111,13 +1216,15 @@
       padding-top: 6rem;
     }
 
-    .personas {
-      margin-bottom: 10rem;
+    .skinny h1, .indented {
+      padding: 0 0 4rem 16rem;
+      width: 80%;
     }
 
     .persona {
       width: 50%;
       float: left;
+      margin-bottom: 10rem;
     }
 
     .persona h3 {
@@ -1132,6 +1239,191 @@
       padding-top: 0;
     }
 
+    .equal{
+      width: 49%;
+    }
 
+
+    .SWOT {
+      padding-left: 10%;
+    }
+
+    .SWOT h2 {
+      font-size: 2.2rem;
+    }
+
+    .google-drive li {
+      font-size: 1.8rem;
+    }
+
+    .high-priority h5 {
+      font-size: 2.2rem;
+    }
+
+    .high-priority li {
+      font-size: 2rem;
+    }
+
+    h6 {
+      font-size: 2rem;
+      padding: 0 0 6rem 0;
+    }
+
+    .upload.chart.vertical, .log-in.chart.vertical {
+      display: none;
+    }
+
+    .horizontal {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 8rem;
+      width: 100%;
+    }
+
+    .less-space.indented {
+      padding-bottom: 2rem;
+    }
+
+    .wireframes {
+      padding-bottom: 5rem;
+    }
+
+    .narrow li {
+      font-size: 2rem;
+    }
+
+    .image-padding-bottom {
+      padding-bottom: 5rem;
+    }
+
+    .arrow {
+       width: 3rem;
+       height: 3rem;
+       top: 45%;
+    }
+
+    .prev {
+       border-bottom: .6rem solid;
+       border-left: .6rem solid;
+       left: 3rem;
+    }
+
+    .next {
+       border-bottom: .6rem solid;
+       border-left: .6rem solid;
+       right: 3rem;
+     }
+
+    .dot-container {
+      margin-bottom: 6rem;
+    }
+
+    .dot, .dot2, .dot3, .dot4 {
+      height: 1rem;
+      margin-top: 1rem;
+      width: 6rem;
+    }
+
+    .color-palette-mobile {
+      display: none;
+    }
+
+    .color-palette-desktop, .typography-desktop {
+      display: block;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-top: 5rem;
+      width: 85%;
+    }
+
+    .typography-desktop {
+      padding-bottom: 8rem;
+    }
+
+    .typography-mobile {
+      display: none;
+    }
+
+    .hifi-mockups p {
+      padding-bottom: 1rem;
+    }
+
+    .hifi-mockups ul {
+      padding: 0 0 8rem 16rem;
+      width: 80%;
+    }
+
+    .preference-test {
+      display: inline-block;
+      width: 45%;
+    }
+
+    .preference-test h2 {
+      font-size: 3.2rem;
+    }
+
+    .A {
+      padding-right: 3rem;
+    }
+
+    .B {
+      padding-left: 3rem;
+    }
+
+
+
+
+  }
+
+
+
+
+  @media only screen and (min-width: 1535px) {
+
+    .container {
+      width: 65%;
+    }
+
+    /* Index styling*/
+
+      h1 {
+        font-size: 4rem;
+        padding-top: 30rem;
+        padding-bottom: 10rem;
+      }
+
+      .carousel h3 {
+        font-size: 4rem;
+      }
+
+      .canopy-hero h2 {
+        width: 45%;
+      }
+
+  }
+
+
+  @media only screen and (min-width: 1600px) {
+
+
+      h1 {
+        font-size: 4rem;
+        padding-top: 30rem;
+        padding-bottom: 15rem;
+      }
+
+      .preference-test {
+        display: inline-block;
+        width: 49%;
+      }
+
+
+      .A {
+        padding-right: 12rem;
+      }
+
+      .B {
+        padding-left: 12rem;
+      }
 
   }
