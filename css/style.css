@@ -795,6 +795,19 @@
     text-align: center;
   }
 
+  .back-to-top {
+    float: right;
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+    top: -5.6rem;
+  }
+
+  .back-to-top:hover {
+    filter: invert(0.5);
+  }
+
 
 
 
