@@ -139,7 +139,7 @@
     line-height: 1.7em;
   }
 
-  #carousel h3::before{
+  /*#carousel h3::before{
     content: 'architecture';
     -webkit-animation: animate 10s linear infinite;
     -moz-animation:    animate 10s linear infinite;
@@ -217,7 +217,7 @@
    80%{
      content: 'design thinking';
    }
- }
+ }*/
 
   #case-studies {
     margin-top: 7rem;

@@ -16,3 +16,21 @@
         }
       });
   });
+
+
+
+  $(function(){
+  var words = [
+      	'illustration.',
+          'interaction design.',
+          'generative art.',
+          'design thinking.'
+          ], i = 0; // i for counting
+
+      setInterval(function(){
+
+          $('#carousel').fadeOut(function(){ //fadeout text
+              $(this).html(words[i=(i+1)%words.length]).fadeIn(); //update, count and fadeIn
+          });
+      }, 2000 ); //2s
+  });
