@@ -1383,19 +1383,19 @@
   @media only screen and (min-width: 1535px) {
 
     .container {
-      width: 65%;
+      width: 70%;
     }
 
     /* Index styling*/
 
       h1 {
-        font-size: 4rem;
+        font-size: 3.6rem;
         padding-top: 30rem;
         padding-bottom: 10rem;
       }
 
       #carousel h3 {
-        font-size: 4rem;
+        font-size: 3.6rem;
       }
 
 
@@ -1414,7 +1414,6 @@
     /* Index styling*/
 
       h1 {
-        font-size: 4rem;
         padding-top: 30rem;
         padding-bottom: 15rem;
       }
