@@ -32,5 +32,5 @@
           $('#carousel').fadeOut(function(){ //fadeout text
               $(this).html(words[i=(i+1)%words.length]).fadeIn(); //update, count and fadeIn
           });
-      }, 2000 ); //2s
+      }, 3000 ); //3s
   });
