@@ -24,7 +24,8 @@
       	'illustration.',
           'interaction design.',
           'generative art.',
-          'design thinking.'
+          'design thinking.',
+          'architecture.'
           ], i = 0; // i for counting
 
       setInterval(function(){
