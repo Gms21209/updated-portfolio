@@ -715,6 +715,10 @@
     background-color: #555;
   }
 
+  .image-padding-bottom {
+    padding-bottom: 3rem;
+  }
+
   .image-container2 {
     display: block;
     overflow: hidden;
