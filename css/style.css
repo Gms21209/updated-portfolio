@@ -128,18 +128,18 @@
     color: #fff;
   }
 
-  .carousel {
+  #carousel {
     display: inline-block;
   }
 
-  .carousel h3 {
+  #carousel h3 {
     font-family: 'Space Mono', monospace;
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 1.7em;
   }
 
-  .carousel h3:before{
+  #carousel h3::before{
     content: 'architecture';
     -webkit-animation: animate 10s linear infinite;
     -moz-animation:    animate 10s linear infinite;
@@ -846,7 +846,7 @@
       padding-top: 16rem;
     }
 
-    .carousel h3 {
+    #carousel h3 {
       font-size: 2.8rem;
     }
 
@@ -947,7 +947,7 @@
         padding-top: 22rem;
       }
 
-      .carousel h3 {
+      #carousel h3 {
         font-size: 3.2rem;
       }
 
@@ -1392,7 +1392,7 @@
         padding-bottom: 10rem;
       }
 
-      .carousel h3 {
+      #carousel h3 {
         font-size: 4rem;
       }
 
