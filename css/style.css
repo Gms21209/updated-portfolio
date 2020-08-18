@@ -856,20 +856,17 @@
 
   /* "About" styling*/
     .about-me h1 {
-      font-size: 4em;
+      font-size: 3.2em;
       padding: 4rem 0 2rem 0;
     }
 
     .about-me h2 {
-      font-size: 2.4rem;
+      font-size: 2.2rem;
       padding: 0rem 0 3rem 0;
     }
 
 
-
-
-
-
+  /* "canopy" styling*/
 
     .mobile-slider {
       display: none;
@@ -975,68 +972,7 @@
 
     /* "About" styling*/
 
-      .about-image-mobile {
-        display: none;
-      }
 
-      .align-right {
-        display: inline-block;
-        float: right;
-        padding-top: 1rem;
-        width: 45%;
-      }
-
-      .about-me h3 {
-        display: block;
-        font-size: 1.4rem;
-        padding-top: 1rem;
-        text-align: right;
-      }
-
-      .italic {
-        font-style: italic;
-      }
-
-      .about-image-desktop {
-        display: block;
-        width: 100%;
-      }
-
-      .about-me {
-        margin-top: 15rem;
-        width: 100%;
-      }
-
-      .about-text {
-        width: 48%
-      }
-
-      .about-me h1 {
-        font-size: 3.4em;
-        padding: 0 0 2rem 0;
-      }
-
-      .about-me h2 {
-        font-size: 2.4rem;
-        padding: 0rem 0 3rem 0;
-      }
-
-      .about-me p {
-        font-size: 2rem;
-      }
-
-      .free-time {
-        margin-bottom: 0;
-        padding-bottom: 0;
-      }
-
-      .about-text span {
-      font-weight: bold;
-      }
-
-      .smaller-margin {
-        margin-top: 10rem;
-      }
 
 
 
@@ -1370,10 +1306,76 @@
       padding-left: 3rem;
     }
 
-
-
-
   }
+
+
+
+  @media only screen and (min-width: 1199px) {
+
+    .about-image-mobile {
+      display: none;
+    }
+
+    .align-right {
+      display: inline-block;
+      float: right;
+      padding-top: 1rem;
+      width: 45%;
+    }
+
+    .about-me h3 {
+      display: block;
+      font-size: 1.4rem;
+      padding-top: 1rem;
+      text-align: right;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .about-image-desktop {
+      display: block;
+      width: 100%;
+    }
+
+    .about-me {
+      margin-top: 15rem;
+      width: 100%;
+    }
+
+    .about-text {
+      width: 48%
+    }
+
+    .about-me h1 {
+      font-size: 3.4em;
+      padding: 0 0 2rem 0;
+    }
+
+    .about-me h2 {
+      font-size: 2.4rem;
+      padding: 0rem 0 3rem 0;
+    }
+
+    .about-me p {
+      font-size: 2rem;
+    }
+
+    .free-time {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .about-text span {
+    font-weight: bold;
+    }
+
+    .smaller-margin {
+      margin-top: 10rem;
+    }
+
+    }
 
 
 
@@ -1396,6 +1398,9 @@
         font-size: 4rem;
       }
 
+
+    /* canopy styling*/
+
       .canopy-hero h2 {
         width: 45%;
       }
@@ -1406,17 +1411,37 @@
   @media only screen and (min-width: 1600px) {
 
 
+    /* Index styling*/
+
       h1 {
         font-size: 4rem;
         padding-top: 30rem;
         padding-bottom: 15rem;
       }
 
+
+    /* About styling*/
+
+      .about-image-desktop, .about-me h3 {
+        width: 450px;
+        float: right;
+      }
+
+      .about-me h2 {
+        padding-bottom: 5rem;
+      }
+
+      .about-text {
+        width: 60%;
+      }
+
+
+    /* canopy styling*/
+
       .preference-test {
         display: inline-block;
         width: 49%;
       }
-
 
       .A {
         padding-right: 12rem;
