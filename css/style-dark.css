@@ -1,145 +1,1474 @@
-/* * {
-  box-sizing: border-box;
-}
+/* All pages*/
 
-html {
-  font-size: 10px;
-}
+  * {
+    box-sizing: border-box;
+  }
 
-body {
-  background-color: #000;
-}
+  html {
+    font-size: 10px;
+    color: #fff;
+  }
 
-.container {
-  background-color: #000;
-  margin: 0 auto;
-  width: 90%;
-}
+  body {
+    background-color: #000;
+  }
 
-header {
-  width: 100%;
-  margin: 0 auto;
-  font-family: 'Space Mono', monospace;
-  font-style: italic;
-  font-size: 16px;
-  padding-top: 20px;
-}
+  .container {
+    background-color: #000;
+    margin: 0 auto;
+    width: 90%;
+  }
 
-.logo-visible {
-  float: left;
-  width: 6rem;
-}
+  header {
+    font-family: 'Space Mono', monospace;
+    font-size: 1.6rem;
+    font-style: italic;
+    margin: 0 auto;
+    padding-top: 2rem;
+    width: 100%;
+  }
 
-.logo-hidden {
-  display: none;
-}
+  .logo-visible {
+    float: left;
+    width: 6rem;
+  }
 
-.logos:active .logo-visible {
-  display: none
-}
+  .logo-hidden {
+    display: none;
+  }
 
-/* for desktop, change to ".logos: hover"*/
-/*.logos:active .logo-hidden {
-  display: inline-block;
-  width: 6rem;
-  float: left;
-}
+  .logos:active .logo-visible {
+    display: none
+  }
 
-.tabs {
-  color: #fff;
-  float: right;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  padding-top: 15px;
-}
+  /* for desktop, change to ".logos: hover"*/
+  .logos:active .logo-hidden {
+    display: inline-block;
+    float: left;
+    width: 6rem;
+  }
 
-header li {
-  display: inline-block;
-  margin-left: 50px;
-}
+  .tabs {
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 1.5rem;
+  }
 
-.work {
-  display: none;
-}
+  header li {
+    display: inline-block;
+    margin-left: 5rem;
+  }
 
-a:link {
-  text-decoration: none;
-}
+  .work {
+    display: none;
+  }
 
-a:visited {
-  color: #fff;
-}
+  a:link {
+    text-decoration: none;
+    color: #fff;
+  }
 
-a:hover {
-  color: #555;
-}
+  a:visited {
+    color: #fff;
+  }
 
-h1 {
-  color: #fff;
-  font-size: 2.1rem;
-  font-family: 'Space Mono', monospace;
-  font-weight: 400;
-  padding-top: 160px;
-  line-height: 1.7em;
-}
+  a:hover {
+    color: #9C9C9C;
+  }
 
-.hero-italic {
-  font-style: italic;
-}
+  .contacts li {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: .75rem;
+  }
 
-.boxlink {
-  border-style: solid;
-  border-width: .1rem;
-  text-decoration: none;
-  padding: 0 4px;
-}
+  .contacts {
+    margin-bottom: 2rem;
+  }
 
-.boxlink:active, .boxlink:hover {
-  color: #000;
-  background-color: #fff;
-  border-color: #fff;
-}
+  .contacts a:link {
+    color: #fff;
+  }
 
-.carousel {
-  border-bottom: .1rem solid #000;
-}
+  .contacts a:hover {
+    color: #9C9C9C;
+  }
 
-.case-studies {
-  margin-top: 10rem;
-}
 
-.canopy-background {
-  background-color: #DFDFDF;
-  margin-bottom: 10rem;
-}
 
-.canopy-home {
-  display: block;
-  width: 70%;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  margin-left: auto;
-  margin-right: auto;
-}
 
-h2 {
-  color: #fff;
-  font-size: 2.2rem;
-  font-family: 'Space Mono', monospace;
-  font-weight: 400;
-  padding-bottom: 1rem;
-}
 
-h3 {
-  color: #fff;
-  font-size: 1.6rem;
-  font-family: 'roc-grotesk', sans-serif;
-  font-weight: 400;
-  padding-bottom: 1rem;
-}
+/* Index styling*/
 
-.capstone-background {
-  background-color: #DFDFDF;
-  margin-bottom: 10rem;
-}
+  h1 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.7em;
+    padding-top: 16rem;
+  }
+
+  .hero-italic {
+    font-style: italic;
+  }
+
+  .boxlink {
+    border-style: solid;
+    border-width: .1rem;
+    padding: 0 .4rem;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+
+  .boxlink:active, .boxlink:hover {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+  }
+
+  #carousel {
+    display: inline-block;
+  }
+
+  #carousel h3 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.1rem;
+    font-weight: 400;
+    line-height: 1.7em;
+  }
+
+  /*#carousel h3::before{
+    content: 'architecture';
+    -webkit-animation: animate 10s linear infinite;
+    -moz-animation:    animate 10s linear infinite;
+    -o-animation:      animate 10s linear infinite;
+    animation:         animate 10s linear infinite;
+  }
+
+  @-webkit-keyframes animate {
+    0%, 100%{
+      content: 'architecture';
+    }
+    20%{
+      content: 'illustration';
+    }
+    40%{
+      content: 'interaction design';
+    }
+    60%{
+      content: 'generative art';
+    }
+    80%{
+      content: 'design thinking';
+    }
+  }
+
+  @keyframes animate{
+    0%, 100%{
+      content: 'architecture';
+    }
+    20%{
+      content: 'illustration';
+    }
+    40%{
+      content: 'interaction design';
+    }
+    60%{
+      content: 'generative art';
+    }
+    80%{
+      content: 'design thinking';
+    }
+ }
+
+ @-moz-keyframes animate{
+   0%, 100%{
+     content: 'architecture';
+   }
+   20%{
+     content: 'illustration';
+   }
+   40%{
+     content: 'interaction design';
+   }
+   60%{
+     content: 'generative art';
+   }
+   80%{
+     content: 'design thinking';
+   }
+ }
+
+ @-o-keyframes animate {
+   0%, 100%{
+     content: 'architecture';
+   }
+   20%{
+     content: 'illustration';
+   }
+   40%{
+     content: 'interaction design';
+   }
+   60%{
+     content: 'generative art';
+   }
+   80%{
+     content: 'design thinking';
+   }
+ }*/
+
+  #case-studies {
+    margin-top: 7rem;
+  }
+
+  /*.canopy-background {
+    background-color: #DFDFDF;
+    margin-bottom: 10rem;
+  }
+
+  .canopy-home {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    width: 70%;
+  }*/
+
+  .project-container {
+    background-color: #000;
+    position: relative;
+    width: 100%;
+  }
+
+  .project-image {
+    backface-visibility: hidden;
+    display: block;
+    margin: 1rem 0 10rem 0;
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+    width: 100%;
+  }
+
+  .middle {
+    display: inline-block;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3 ease-in-out;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .project-container:hover .project-image {
+    opacity: 0.15;
+  }
+
+  .project-container:hover .middle {
+    opacity: 1;
+  }
+
+  .hover-text {
+    color: #fff;
+    font-family: 'Space Mono', monospace;
+    font-size: 1.8rem;
+  }
+
+  /*.canopy-home {
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+  }
+
+  .canopy-home:hover {
+    opacity: .5;
+  }*/
+
+  h2 {
+    font-family: 'Space Mono', monospace;
+    font-size: 2.2rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    padding-top: 0;
+  }
+
+  h3 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+  }
+
+
+
+
+
+
+/* "About" styling*/
+
+  .about-image-mobile {
+    display: block;
+    margin-top: 10rem;
+    width: 100%;
+  }
+
+  .about-image-desktop {
+    display: none;
+  }
+
+  .about-me {
+    line-height: 1.5;
+  }
+
+  .about-me h1 {
+    font-size: 2.3rem;
+    padding: 3rem 0 1rem 0;
+  }
+
+  .about-me h2 {
+    font-size: 1.7rem;
+    padding: 0rem 0 3rem 0;
+  }
+
+  .about-me h3 {
+    display: none;
+  }
+
+
+  .about-me p {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding-bottom: 2rem;
+  }
+
+  .free-time {
+    margin-bottom: 2.5rem;
+  }
+
+
+
+
+
+/*start of "canopy" styling*/
+
+  .case-study {
+    line-height: 1.5;
+  }
+
+  .canopy-hero h1 {
+    font-size: 2.8rem;
+    font-weight: bold;
+    padding: 10rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .canopy-hero h2 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    margin: 0 5rem 2rem 5rem;
+    text-align: center;
+  }
+
+  .canopy-home-green {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .colored {
+    background-color: #2D2D2D;
+    font-family: 'roc-grotesk', sans-serif;
+    margin: 5rem 0 5rem 0;
+  }
+
+  .center {
+    padding: 4rem 0 1rem 0;
+    text-align: center;
+  }
+
+  .colored h2 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 2em;
+    font-weight: bolder;
+    padding-bottom: 1rem;
+  }
+
+  .small-fourth > .med-text, .large-fourth > .right {
+    padding-bottom: 3em;
+  }
+
+  .colored li {
+    font-size: 1.4em;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  .mobile-icon {
+    display: block;
+    margin: 0 auto;
+    padding: 4rem 0 2rem 0;
+  }
+
+  .view-prototypes h3 {
+    color: #D2FFEF;
+    font-size: 1.6em;
+    margin-bottom: 6rem;
+    text-align: center;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .section-label {
+    color: #B9B9B9;
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6em;
+    padding-bottom: 1.5em;
+  }
+
+  .subsection {
+    margin-bottom: 5rem;
+  }
+
+  .subsection h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    padding: 0 0 .75em 0;
+  }
+
+  .subsection p {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6em;
+  }
+
+  .subsection ul {
+    padding: 1em;
+  }
+
+  .subsection li {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6em;
+    list-style: inside;
+    padding-top: .75em;
+  }
+
+  .solutions {
+    margin-bottom: 2rem;
+  }
+
+  .final-mockups {
+    display: block;
+    width: 100%;
+    margin-bottom: 5rem;
+  }
+
+  .findings, .stories, .google-drive {
+    padding: 6% 6% 12% 6%;
+  }
+
+  .third {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .key-findings .third {
+    margin-top: 2rem;
+    width: 49%;
+  }
+
+  .colored h3 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+  }
+
+  .colored h4 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+  }
+
+  .colored p {
+    font-size: 1.4rem;
+    width: 90%;
+    padding-bottom: 1rem;
+  }
+
+  .persona-pic {
+    width: 100%;
+  }
+
+  .persona h2 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 4rem;
+  }
+
+  .persona p {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+  }
+
+  .demographic {
+    font-style: italic;
+  }
+
+  .indent {
+    padding-left: 1rem;
+    width: 90%;
+  }
+
+  .persona h3 {
+    font-weight: 600;
+    padding-bottom: 1rem;
+  }
+
+  .persona ul {
+    margin-left: 1rem;
+    padding:0 0 3rem 0;
+  }
+
+  .persona li {
+    font-size: 1.4rem;
+  }
+
+  .personas {
+    margin-bottom: 2rem;
+  }
+
+  .sophia {
+    padding-top: 4rem;
+  }
+
+  .first-paragraph {
+    padding-bottom: 2rem;
+  }
+
+  .colored.google-drive {
+    margin-top: 2.5rem;
+    padding: 6%;
+  }
+
+  .SWOT h2 {
+    padding-bottom: 0;
+  }
+
+  .SWOT ul {
+    padding-top: .25rem;
+  }
+
+  .SWOT li {
+    font-size: 1.4rem;
+  }
+
+  .colored h3 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 0 3rem 0;
+    text-align: center;
+  }
+
+  .high-priority {
+    margin-left: 4rem;
+  }
+
+  .stories h5 {
+    font-size: 1.8rem;
+  }
+
+  h6 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 0 3rem 0;
+  }
+
+  .upload.chart.vertical {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 4.9rem;
+    width: 25%;
+  }
+
+  .log-in.chart.vertical {
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+  }
+
+  .horizontal {
+    display: none;
+  }
+
+  .less-space {
+    padding-bottom: 1rem;
+  }
+
+  .slideshow-container{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .image-container {
+    display: block;
+    overflow: hidden;
+  }
+
+  .image-container .image{
+    width: 100%;
+  }
+
+  .arrow {
+     width:1.6rem;
+     height: 1.6rem;
+     color: #fff;
+     position: absolute;
+     top: 45%;
+     margin-top: -2rem;
+     cursor: pointer;
+  }
+
+  .arrow:visited {
+    color: #fff;
+  }
+
+  .prev {
+     border-bottom: .3rem solid;
+     border-left: .3rem solid;
+     transform: rotate(45deg);
+     left: 2rem;
+  }
+
+  .next {
+     border-bottom: .3rem solid;
+     border-left: .3rem solid;
+     transform: rotate(-135deg);
+     right: 2rem;
+   }
+
+  .dot-container {
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+
+  .dot {
+    position: inherit;
+    top: -4rem;
+    height: .8rem;
+    width: 3.6rem;
+    background-color: #bbb;
+    border-radius: 0rem;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .5s;
+  }
+
+  .active , .dot:hover {
+    background-color: #555;
+  }
+
+  .fade {
+    transition: all .5s;
+  }
+
+  .arrow:hover {
+    transition: all .2s;
+  }
+
+  iframe {
+    background-color: #52796B;
+    padding: 7.5%;
+  }
+
+  .dot2 {
+    position: inherit;
+    top: -4rem;
+    height: .8rem;
+    width: 3.6rem;
+
+    background-color: #bbb;
+    border-radius: 0rem;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .5s;
+  }
+
+  .active , .dot2:hover {
+    background-color: #555;
+  }
+
+  .image-container2 {
+    display: block;
+    overflow: hidden;
+  }
+
+  .image-container2 .image{
+    width: 100%;
+  }
+
+  .full-width {
+    width: 100%;
+  }
+
+  .space {
+    padding-top: 2rem;
+  }
+
+  .color-palette-desktop {
+    display: none;
+  }
+
+  .typography {
+    padding-left: 2rem;
+  }
+
+  .typography-desktop {
+    display: none;
+  }
+
+  .preference-h2 {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    padding-top: 4rem;
+  }
+
+  .dot3 {
+    position: inherit;
+    top: -4rem;
+    height: .8rem;
+    width: 3.6rem;
+
+    background-color: #bbb;
+    border-radius: 0rem;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+    transition: all .5s;
+  }
+
+  .active , .dot3:hover {
+    background-color: #555;
+  }
+
+  .desktop-slider {
+    display: none;
+  }
+
+  .image-container3 {
+    display: block;
+    overflow: hidden;
+  }
+
+  .image-container3 .image{
+    width: 100%;
+  }
+
+  .three {
+    top: 39%;
+  }
+
+  .less-margin {
+    margin-bottom: 2rem;
+  }
+
+  #lessons {
+    font-weight: 600;
+    padding: 2rem 0 0 0;
+  }
+
+  .centered {
+    text-align: center;
+  }
+
+  .back-to-top {
+    float: right;
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6em;
+    text-align: center;
+    position: relative;
+    top: -5.6rem;
+  }
+
+  .back-to-top:hover, .moon:hover, .sun:hover {
+    filter: invert(0.5);
+  }
+
+  .sun {
+    position: relative;
+    top: .5rem;
+  }
+
+
+
+
+
+
+  /* Media queries */
+  @media only screen and (min-width: 575px) {
+
+  /* All pages*/
+    .container {
+      width: 85%;
+    }
+
+    header {
+      font-family: 'Space Mono', monospace;
+      font-size: 1.8rem;
+      padding-top: 3rem;
+    }
+
+    header li {
+      display: inline-block;
+      margin-left: 8rem;
+    }
+
+    footer li {
+      display: inline-block;
+      margin: 0 auto;
+    }
+
+    .padding-left {
+      padding-left: 4rem;
+    }
+
+    footer img {
+      padding-right: .5rem;
+    }
+
+    .contacts {
+      margin: 15rem 0 5rem 0;
+      text-align: center;
+    }
+
+    .contacts li {
+      font-size: 2rem;
+    }
+
+  /* Index styling*/
+
+    h1 {
+      font-size: 2.8rem;
+      padding-top: 16rem;
+    }
+
+    #carousel h3 {
+      font-size: 2.8rem;
+    }
+
+    #case-studies {
+      margin-top: 10rem;
+    }
+
+  /* "About" styling*/
+    .about-me h1 {
+      font-size: 3.2em;
+      padding: 4rem 0 2rem 0;
+    }
+
+    .about-me h2 {
+      font-size: 2.2rem;
+      padding: 0rem 0 3rem 0;
+    }
+
+
+  /* "canopy" styling*/
+
+    .mobile-slider {
+      display: none;
+    }
+
+    .desktop-slider {
+      display: block;
+    }
+
+    .dot4 {
+      position: inherit;
+      top: -4rem;
+      height: .8rem;
+      width: 3.6rem;
+
+      background-color: #bbb;
+      border-radius: 0rem;
+      display: inline-block;
+      cursor: pointer;
+      z-index: 1;
+      transition: all .5s;
+    }
+
+    .active , .dot4:hover {
+      background-color: #555;
+    }
+
+    .image-container4 {
+      display: block;
+      overflow: hidden;
+    }
+
+    .image-container4 .image{
+      width: 100%;
+    }
+
+  }
+
+
+
+
+
+
+
+  @media only screen and (min-width: 991px) {
+
+    /* All pages*/
+
+      .container {
+        width: 75%;
+      }
+
+      header li {
+        margin-left: 10rem;
+      }
+
+      .logos:hover .logo-visible {
+        display: none
+      }
+
+      .logos:hover .logo-hidden {
+        display: inline-block;
+        float: left;
+        width: 6rem;
+      }
+
+
+
+
+
+    /* Index styling*/
+
+      h1 {
+        font-size: 3.2rem;
+        padding-top: 22rem;
+      }
+
+      #carousel h3 {
+        font-size: 3.2rem;
+      }
+
+      #case-studies {
+        margin-top: 30rem;
+      }
+
+      .hover-text {
+        font-size: 3.2rem;
+      }
+
+      h2 {
+        font-size: 2.8rem;
+        padding-bottom: 2rem;
+        padding-top: 3rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        padding-bottom: 2rem;
+      }
+
+
+
+
+    /* "About" styling*/
+
+
+
+
+
+    /*start of "canopy" styling*/
+
+    .canopy-hero h1 {
+      font-size: 4.2rem;
+      font-weight: bold;
+      padding: 10rem 0 1rem 0;
+      text-align: center;
+    }
+
+    .canopy-hero h2 {
+      font-size: 2rem;
+      padding: 0 0 4rem 0;
+      width: 42%;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .colored {
+      margin: 10rem 0 10rem 0;
+    }
+
+    .colored h2 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    .center {
+      display: block;
+      padding-bottom: 4rem;
+    }
+
+    .small-fourth {
+      display: inline-block;
+      vertical-align: top;
+      text-align: left;
+      width: 16%;
+    }
+
+    .large-fourth {
+      display: inline-block;
+      padding-left: 3rem;
+      width: 40%;
+    }
+
+    .align-left {
+      text-align: left;
+    }
+
+    .tools {
+      padding-left: 6rem;
+      width: 18%;
+    }
+
+    .specs li {
+      font-size: 1.5rem;
+    }
+
+    .med-text {
+      display: block;
+    }
+
+    .left {
+      width: 50%;
+      float: left;
+    }
+
+    .right {
+      width: 50%;
+      float: left;
+    }
+
+    .view-prototypes {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .view-prototypes h3 {
+      font-size: 2em;
+      margin-bottom: 12rem;
+      text-align: center;
+    }
+
+    .view-prototypes h3:hover {
+      color: #8DD3BA;
+    }
+
+    .mobile {
+      float: left;
+      width: 50%;
+    }
+
+    .desktop {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+
+    .mobile-icon, .desktop-icon {
+      display: inline-block;
+      margin: 0 auto;
+      padding: 8rem 0 2rem 0;
+    }
+
+    .section-label {
+      font-size: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    .final-mockups {
+      margin-bottom: 12rem;
+    }
+
+    .problems li, .solutions li, .google-drive li {
+      font-size: 2rem;
+    }
+
+    .subsection {
+      margin-bottom: 8rem;
+    }
+
+    .narrow {
+      padding-left: 16rem;
+      width: 80%;
+    }
+
+    .narrow {
+      padding-left: 16rem;
+    }
+
+    .subsection h1 {
+      font-size: 2.8em;
+      padding-bottom: 3rem;
+    }
+
+    .subsection p {
+      font-size: 2em;
+    }
+
+    .persona ul {
+      padding: 2em;
+    }
+
+    .persona li {
+      font-size: 2rem;
+    }
+
+    .findings {
+      padding: 8% 14%;
+    }
+
+    .key-findings .third {
+      margin-top: 2rem;
+      width: 33%;
+    }
+
+    .colored h3 {
+      font-size: 2.8rem;
+      padding: 0rem 0 5rem 0;
+    }
+
+    .colored h4 {
+      font-size: 3.6rem;
+      font-weight: bold;
+      padding-bottom: 1.5rem;
+    }
+
+    .colored p {
+      font-size: 2rem;
+      width: 85%;
+      padding-bottom: 1rem;
+    }
+
+    .bottom {
+      padding-top: 6rem;
+    }
+
+    .skinny h1, .indented {
+      padding: 0 0 4rem 16rem;
+      width: 80%;
+    }
+
+    .persona {
+      width: 50%;
+      float: left;
+      margin-bottom: 10rem;
+    }
+
+    .persona h3 {
+      padding : 3rem 0 1.5rem 0;
+    }
+
+    .persona ul {
+      padding: 0 0 3rem 0;
+    }
+
+    .sophia {
+      padding-top: 0;
+    }
+
+    .equal{
+      width: 49%;
+    }
+
+
+    .SWOT {
+      padding-left: 10%;
+    }
+
+    .SWOT h2 {
+      font-size: 2.2rem;
+    }
+
+    .google-drive li {
+      font-size: 1.8rem;
+    }
+
+    .high-priority h5 {
+      font-size: 2.2rem;
+    }
+
+    .high-priority li {
+      font-size: 2rem;
+    }
+
+    h6 {
+      font-size: 2rem;
+      padding: 0 0 6rem 0;
+    }
+
+    .upload.chart.vertical, .log-in.chart.vertical {
+      display: none;
+    }
+
+    .horizontal {
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 8rem;
+      width: 100%;
+    }
+
+    .less-space.indented {
+      padding-bottom: 2rem;
+    }
+
+    .wireframes {
+      padding-bottom: 5rem;
+    }
+
+    .narrow li {
+      font-size: 2rem;
+    }
+
+    .image-padding-bottom {
+      padding-bottom: 5rem;
+    }
+
+    .arrow {
+       width: 3rem;
+       height: 3rem;
+       top: 45%;
+    }
+
+    .prev {
+       border-bottom: .6rem solid;
+       border-left: .6rem solid;
+       left: 3rem;
+    }
+
+    .next {
+       border-bottom: .6rem solid;
+       border-left: .6rem solid;
+       right: 3rem;
+     }
+
+    .dot-container {
+      margin-bottom: 6rem;
+    }
+
+    .dot, .dot2, .dot3, .dot4 {
+      height: 1rem;
+      margin-top: 1rem;
+      width: 6rem;
+    }
+
+    .color-palette-mobile {
+      display: none;
+    }
+
+    .color-palette-desktop, .typography-desktop {
+      display: block;
+      margin: 0 auto;
+      padding-left: 0;
+      padding-top: 5rem;
+      width: 85%;
+    }
+
+    .typography-desktop {
+      padding-bottom: 8rem;
+    }
+
+    .typography-mobile {
+      display: none;
+    }
+
+    .hifi-mockups p {
+      padding-bottom: 1rem;
+    }
+
+    .hifi-mockups ul {
+      padding: 0 0 8rem 16rem;
+      width: 80%;
+    }
+
+    .preference-test {
+      display: inline-block;
+      width: 45%;
+    }
+
+    .preference-test h2 {
+      font-size: 3.2rem;
+    }
+
+    .A {
+      padding-right: 3rem;
+    }
+
+    .B {
+      padding-left: 3rem;
+    }
+
+  }
+
+
+
+  @media only screen and (min-width: 1199px) {
+
+    .about-image-mobile {
+      display: none;
+    }
+
+    .align-right {
+      display: inline-block;
+      float: right;
+      padding-top: 1rem;
+      width: 45%;
+    }
+
+    .about-me h3 {
+      display: block;
+      font-size: 1.4rem;
+      padding-top: 1rem;
+      text-align: right;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .about-image-desktop {
+      display: block;
+      width: 100%;
+    }
+
+    .about-me {
+      margin-top: 15rem;
+      width: 100%;
+    }
+
+    .about-text {
+      width: 48%
+    }
+
+    .about-me h1 {
+      font-size: 3.4em;
+      padding: 0 0 2rem 0;
+    }
+
+    .about-me h2 {
+      font-size: 2.4rem;
+      padding: 0rem 0 3rem 0;
+    }
+
+    .about-me p {
+      font-size: 2rem;
+    }
+
+    .free-time {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .about-text span {
+    font-weight: bold;
+    }
+
+    .smaller-margin {
+      margin-top: 10rem;
+    }
+
+    }
+
+
+
+
+  @media only screen and (min-width: 1535px) {
+
+    .container {
+      width: 70%;
+    }
+
+    /* Index styling*/
+
+      h1 {
+        font-size: 3.6rem;
+        padding-top: 30rem;
+        padding-bottom: 10rem;
+      }
+
+      #carousel h3 {
+        font-size: 3.6rem;
+      }
+
+
+    /* canopy styling*/
+
+      .canopy-hero h2 {
+        width: 45%;
+      }
+
+  }
+
+
+  @media only screen and (min-width: 1600px) {
+
+
+    /* Index styling*/
+
+      h1 {
+        padding-top: 30rem;
+        padding-bottom: 15rem;
+      }
+
+
+    /* About styling*/
+
+      .about-image-desktop, .about-me h3 {
+        width: 450px;
+        float: right;
+      }
+
+      .about-me h2 {
+        padding-bottom: 5rem;
+      }
+
+      .about-text {
+        width: 60%;
+      }
+
+
+    /* canopy styling*/
+
+      .preference-test {
+        display: inline-block;
+        width: 49%;
+      }
+
+      .A {
+        padding-right: 12rem;
+      }
+
+      .B {
+        padding-left: 12rem;
+      }
+
+  }

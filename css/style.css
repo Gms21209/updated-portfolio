@@ -804,9 +804,16 @@
     top: -5.6rem;
   }
 
-  .back-to-top:hover {
+  .back-to-top:hover, .moon:hover, .sun:hover {
     filter: invert(0.5);
   }
+
+  .moon {
+    position: relative;
+    top: .25rem;
+  }
+
+
 
 
 
