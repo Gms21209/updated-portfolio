@@ -1341,6 +1341,11 @@
 
   @media only screen and (min-width: 1199px) {
 
+    .hero h1 {
+      padding-top: 30rem;
+    }
+
+
     .about-image-mobile {
       display: none;
     }
