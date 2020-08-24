@@ -44,6 +44,26 @@ carouselSlide.addEventListener('transitionend', () => {
   }
 });*/
 
+//Get the button:
+mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+
 
 var slideNo = 1;
 Carousel(slideNo);
@@ -176,20 +196,17 @@ function currentSlide4(n){
 
 
 
-jQuery($ => {
-  // The speed of the scroll in milliseconds
-  const speed = 1000;
 
-  $('a[href*="#"]')
-    .filter((i, a) => a.getAttribute('href').startsWith('#') || a.href.startsWith(`${location.href}#`))
-    .unbind('click.smoothScroll')
-    .bind('click.smoothScroll', event => {
-      const targetId = event.currentTarget.getAttribute('href').split('#')[1];
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        event.preventDefault();
-        $('html, body').animate({ scrollTop: $(targetElement).offset().top }, speed);
-      }
+$(document).ready(function(){
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+            $('#scroll').fadeIn();
+        } else {
+            $('#scroll').fadeOut();
+        }
+    });
+    $('#scroll').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
     });
 });
