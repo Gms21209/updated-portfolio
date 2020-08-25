@@ -355,6 +355,11 @@
     margin-bottom: 2.5rem;
   }
 
+  .about-text span {
+  font-weight: bold;
+  }
+
+
 
 
 
@@ -1428,10 +1433,6 @@
       .free-time {
         margin-bottom: 0;
         padding-bottom: 0;
-      }
-
-      .about-text span {
-      font-weight: bold;
       }
 
       .smaller-margin {
