@@ -1432,6 +1432,38 @@
         top: -12rem;
       }
 
+      .form-header {
+        font-size: 3.6rem;
+        padding: 14rem 0 5rem 0;
+        text-align: center;
+      }
+
+      form {
+        margin: 0 auto;
+        width: 75%;
+      }
+
+      .form-label  {
+        font-size: 2rem;
+      }
+
+      form > input {
+        margin-bottom: 3rem;
+        padding: .5rem 0;
+      }
+
+      form > textarea {
+        margin-bottom: 3rem;
+        padding-bottom: 6rem;
+      }
+
+      form > button {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 1rem 0 10rem 0;
+        padding-top: 1rem;
+      }
+
 
 
     }
@@ -1502,6 +1534,12 @@
 
       .smaller-margin {
         margin-top: 10rem;
+      }
+
+      .form-header {
+        font-size: 3.6rem;
+        padding: 10rem 0 5rem 0;
+        text-align: center;
       }
 
       }
@@ -1578,5 +1616,12 @@
         .B {
           padding-left: 12rem;
         }
+
+        /* canopy styling*/
+
+          form {
+            margin: 0 auto;
+            width: 50%;
+          }
 
     }
