@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Max Schnitzer Portfolio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style-dark.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/lyq6fpq.css">
+  </head>
+
+  <body>
+
+    <!-- Page container -->
+     <div class="container">
+
+       <!-- Navigation -->
+       <header id="nav">
+         <a href="index-dark.html">
+           <div class="logos">
+             <img class="logo-visible" src="images/logo-light.svg" alt="personal logo">
+             <img class="logo-hidden" src="images/logo-light-eyeopen.svg" alt="personal logo">
+           </div>
+         </a>
+         <ul class="tabs">
+           <li class="about">
+             <a href="about-dark.html">About</a>
+           </li>
+           <li class="contact active-tab">
+             <a href="contact-dark.html">Contact</a>
+           </li>
+           <li class="sun">
+             <a href="contact.html"><img src="images/sun.svg" alt="light mode"></a>
+           </li>
+         </ul>
+       </header>
+
+       <h1 class="form-header">Say hello</h1>
+
+       <form action="https://formspree.io/xpzygbar" method="POST">
+        <label class="form-label">Your Name</label>
+        <input type="text" name="name">
+
+        <label class="form-label">Your Email</label>
+        <input type="text" name="_replyto">
+
+        <label class="form-label">Your Message</label>
+        <textarea name="message"></textarea>
+
+        <!-- your other form fields go here -->
+
+        <button class="form-label send-button" type="submit">Send</button>
+      </form>
+
+      <footer>
+        <ul class="contacts">
+          <!--<li>
+            <img src="images/arrow-dark.svg" alt="arrow">
+            <a href="mailto:maxschnitzer95@gmail.com">EMAIL</a>
+          </li>-->
+          <li>
+            <img class="padding-left" src="images/arrow-light.svg" alt="arrow">
+            <a href="linkedin.com" target="_blank">LINKEDIN</a>
+          </li>
+          <li>
+            <img class="padding-left" src="images/arrow-light.svg" alt="arrow">
+            <a href="#" target="_blank">RESUME</a>
+          </li>
+        </ul>
+      </footer>
+
+      </div>
+
+       <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+
+         gtag('config', 'UA-176422150-1');
+       </script>
+
+     </body>
+
+   </html>

@@ -58,11 +58,16 @@
 
   header li {
     display: inline-block;
-    margin-left: 5rem;
+    margin-left: 3rem;
   }
 
   .work {
     display: none;
+  }
+
+  .active-tab {
+    border-bottom: 1px solid white;
+    padding-bottom: .75rem;
   }
 
   a:link {
@@ -856,6 +861,62 @@
     position: relative;
     top: .5rem;
   }
+
+
+  /*start of "contact" styling*/
+
+  .form-header {
+    font-size: 2.8rem;
+    padding: 12rem 0 5rem 0;
+    text-align: center;
+  }
+
+  form {
+    display: block;
+    width: 100%;
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  .form-label  {
+    display: block;
+    padding-bottom: 1rem;
+  }
+
+  form > input {
+    background-color: #111;
+    border-color: white;
+    border-width: thin;
+    margin-bottom: 2rem;
+    padding: .5rem 0;
+  }
+
+  form > textarea {
+    background-color: #111;
+    border-color: white;
+    margin-bottom: 2rem;
+    padding-bottom: 6rem;
+  }
+
+  form > input, form > textarea, form > button {
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    width: 100%;
+  }
+
+  form > button {
+    background-color: #f3f3f3;
+    border: none;
+    color: black;
+    font-family: 'roc-grotesk', sans-serif;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 1rem 0 10rem 0;
+    padding-top: 1rem;
+  }
+
 
 
 
