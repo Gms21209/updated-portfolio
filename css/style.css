@@ -19,12 +19,23 @@
   }
 
   header {
+    background: #f3f3f3;
     font-family: 'Space Mono', monospace;
     font-size: 1.6rem;
     font-style: italic;
+    height: 89.02px;
     margin: 0 auto;
     padding-top: 2rem;
+    padding-bottom: 1rem;
+    position: fixed;
+    top: 0;
+    transition: top 0.2s ease-in-out;
     width: 100%;
+    z-index: 1;
+  }
+
+  .nav-up {
+    top: -89.02px;
   }
 
   .logo-visible {
@@ -112,7 +123,7 @@
     font-size: 2.1rem;
     font-weight: 400;
     line-height: 1.7em;
-    padding-top: 16rem;
+    padding-top: 18rem;
   }
 
   .hero-italic {
@@ -320,9 +331,10 @@
 
 /* "About" styling*/
 
+
   .about-image-mobile {
     display: block;
-    margin-top: 10rem;
+    margin-top: 12rem;
     width: 100%;
   }
 
@@ -378,7 +390,7 @@
   .canopy-hero h1 {
     font-size: 2.8rem;
     font-weight: bold;
-    padding: 10rem 0 1rem 0;
+    padding: 12rem 0 1rem 0;
     text-align: center;
   }
 
@@ -866,7 +878,7 @@
 
   .form-header {
     font-size: 2.8rem;
-    padding: 10rem 0 5rem 0;
+    padding: 12rem 0 5rem 0;
     text-align: center;
   }
 
@@ -931,7 +943,12 @@
         header {
           font-family: 'Space Mono', monospace;
           font-size: 1.8rem;
+          height: 99.02px;
           padding-top: 3rem;
+        }
+
+        .nav-up {
+          top: -99.02px;
         }
 
         header li {
@@ -966,7 +983,7 @@
 
         h1 {
           font-size: 2.8rem;
-          padding-top: 16rem;
+          padding-top: 19rem;
         }
 
         #carousel h3 {
@@ -978,6 +995,13 @@
         }
 
       /* "About" styling*/
+
+        .about-image-mobile {
+          display: block;
+          margin-top: 13rem;
+          width: 100%;
+        }
+
         .about-me h1 {
           font-size: 3.2em;
           padding: 4rem 0 2rem 0;
@@ -990,6 +1014,10 @@
 
 
       /* "canopy" styling*/
+
+        .canopy-hero h1 {
+          padding: 13rem 0 1rem 0;
+        }
 
         .mobile-slider {
           display: none;
@@ -1026,6 +1054,10 @@
           width: 100%;
         }
 
+        .form-header {
+          padding: 13rem 0 5rem 0;
+        }
+
       }
 
 
@@ -1049,6 +1081,14 @@
           width: 6rem;
         }
 
+        header {
+          font-family: 'Space Mono', monospace;
+          font-size: 1.8rem;
+          height: 109.02px;
+          padding-top: 3rem;
+          padding-bottom: 2rem
+        }
+
 
 
 
@@ -1057,7 +1097,7 @@
 
         h1 {
           font-size: 3.2rem;
-          padding-top: 22rem;
+          padding-top: 25rem;
         }
 
         #carousel h3 {
@@ -1097,7 +1137,7 @@
       .canopy-hero h1 {
         font-size: 4.2rem;
         font-weight: bold;
-        padding: 10rem 0 1rem 0;
+        padding: 13rem 0 1rem 0;
         text-align: center;
       }
 
@@ -1431,7 +1471,7 @@
 
       .form-header {
         font-size: 3.6rem;
-        padding: 14rem 0 5rem 0;
+        padding: 17rem 0 5rem 0;
         text-align: center;
       }
 
@@ -1472,7 +1512,7 @@
     @media only screen and (min-width: 1199px) {
 
       .hero h1 {
-        padding-top: 30rem;
+        padding-top: 24rem;
       }
 
       .about-image-mobile {
@@ -1503,7 +1543,7 @@
       }
 
       .about-me {
-        margin-top: 15rem;
+        margin-top: 18rem;
         width: 100%;
       }
 
@@ -1536,7 +1576,7 @@
 
       .form-header {
         font-size: 3.6rem;
-        padding: 10rem 0 5rem 0;
+        padding: 13rem 0 5rem 0;
         text-align: center;
       }
 
@@ -1552,9 +1592,9 @@
 
       /* Index styling*/
 
-        h1 {
+        .hero h1 {
           font-size: 3.6rem;
-          padding-top: 30rem;
+          padding-top: 34rem;
           padding-bottom: 10rem;
         }
 
@@ -1578,8 +1618,8 @@
 
       /* Index styling*/
 
-        h1 {
-          padding-top: 30rem;
+        .hero h1 {
+          padding-top: 34rem;
           padding-bottom: 15rem;
         }
 

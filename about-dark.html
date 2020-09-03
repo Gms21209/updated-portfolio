@@ -13,8 +13,9 @@
   </head>
 
   <body>
-     <div class="container">
-       <header id="nav">
+
+       <header class="nav-down">
+         <div class="container">
          <a href="index-dark.html">
            <div class="logos">
              <img class="logo-visible" src="images/logo-light.svg" alt="personal logo">
@@ -32,7 +33,10 @@
              <a href="about.html"><img src="images/sun.svg" alt="light mode"></a>
            </li>
          </ul>
+       </div>
        </header>
+
+       <div class="container">
        <section class="about-me">
          <img class="about-image-mobile" src="images/about-pic-mobile.png" alt="pic of me">
          <div class="align-right">
@@ -47,7 +51,7 @@
 
             <p>In my free time, you can find me making art, living out my NBA dreams at the local rec center, honing my coding skills, and reassuring my dog that he’s a very good boy.</p>
 
-            <p class="free-time">Please reach out! I’d love to connect.</p>
+            <p class="free-time">Please <span><a href="contact-dark.html">reach out!</a></span> I’d love to connect.</p>
           </div>
        </section>
        <footer>
@@ -67,6 +71,9 @@
          </ul>
        </footer>
      </div>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="javascript/index.js"></script>
 
          <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-176422150-1"></script>
