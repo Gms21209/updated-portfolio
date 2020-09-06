@@ -878,7 +878,13 @@
 
   .form-header {
     font-size: 2.8rem;
-    padding: 12rem 0 5rem 0;
+    padding: 12rem 0 0 0;
+    text-align: center;
+  }
+
+  .form-email {
+    font-size: 1.6rem;
+    padding: 1rem 0 5rem 0;
     text-align: center;
   }
 
@@ -1055,7 +1061,11 @@
         }
 
         .form-header {
-          padding: 13rem 0 5rem 0;
+          padding: 13rem 0 0 0;
+        }
+
+        .form-email {
+          padding-top: 2rem;
         }
 
       }
@@ -1471,8 +1481,12 @@
 
       .form-header {
         font-size: 3.6rem;
-        padding: 17rem 0 5rem 0;
+        padding: 17rem 0 0 0;
         text-align: center;
+      }
+
+      .form-email {
+        font-size: 2rem;
       }
 
       form {
@@ -1576,8 +1590,12 @@
 
       .form-header {
         font-size: 3.6rem;
-        padding: 13rem 0 5rem 0;
+        padding: 13rem 0 0 0;
         text-align: center;
+      }
+
+      .form-email {
+        padding-bottom: 7rem;
       }
 
       }
