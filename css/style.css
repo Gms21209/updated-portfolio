@@ -394,6 +394,10 @@
     text-align: center;
   }
 
+  .construction {
+    padding-top: 20rem;
+  }
+
   .canopy-hero h2 {
     font-family: 'roc-grotesk', sans-serif;
     font-size: 1.6rem;
