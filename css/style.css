@@ -406,10 +406,6 @@
     text-align: center;
   }
 
-  .construction {
-    padding-top: 20rem;
-  }
-
   .canopy-hero h2 {
     font-family: 'roc-grotesk', sans-serif;
     font-size: 1.6rem;
@@ -948,6 +944,23 @@
     font-weight: 500;
     margin: 1rem 0 10rem 0;
     padding-top: 1rem;
+  }
+
+  .construction {
+    padding-top: 15rem;
+  }
+
+  .construction h1 {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+
+  .construction h2 {
+    padding-top: 2.5rem;
+  }
+
+  .construction span {
+    text-decoration: underline;
   }
 
 
@@ -1538,6 +1551,16 @@
         font-weight: 500;
         margin: 1rem 0 10rem 0;
         padding-top: 1rem;
+      }
+
+      .construction h1 {
+        font-size: 3rem;
+        line-height: 1.5;
+      }
+
+      .construction h2 {
+        padding-top: 3rem;
+        width: 100%;
       }
 
     }
